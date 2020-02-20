@@ -102,7 +102,9 @@
                         <?php if(is_array($groupAttrArr)): ?>
                             <table>
                             <?php foreach($groupAttrArr as $k => $v): ?>
+                                <?php if($k != "重量" && $k != "体积重"): ?>
                                 <tr><td><?= $k ?></td><td><?= $v ?></td></tr>
+                                <?php endif; ?>
                             <?php endforeach; ?>
                             </table>
                             <br/>
