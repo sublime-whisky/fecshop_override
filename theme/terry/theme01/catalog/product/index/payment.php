@@ -8,6 +8,8 @@
  */
 ?>
 <div class="scroll_left">
-    <a href="">支付方式，以下内容可定制</a>
+    <a href=""><?= Yii::$service->page->translate->__('支付方式:'); ?></a>
 </div>
-<p>...</p>
+<p><?= Yii::$service->page->translate->__('HUATANTEST.com接受支付宝、微信支付和银行卡付款。'); ?></p>
+
+<p><img alt="" height="407" src="<?= Yii::$service->image->getImgUrl('appfront/images/accept_payment_methods.png') ?>" width="600"></p>
