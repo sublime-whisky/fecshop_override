@@ -55,26 +55,28 @@ return [
                  *     //    ],
                  *     //],
                  * ],
-                 * # css config
-                 * 'cssOptions'	=> [
-                 *     # css config 1.
-                 *     [
-                 *         'css'	=>[
-                 *             'css/my.css',
-                 *         ],
-                 *     ],
-                 * 
-                 *     # css config 2.
-                 *     //[
-                 *     //    'options' => [
-                 *     //        'condition'=> 'lt IE 9',
-                 *     //    ],
-                 *     //    'css'	=>[
-                 *     //        'css/ltie9.css',
-                 *     //    ],
-                 *     //],
-                 * ],
                  **/
+                  # css config
+                  'cssOptions'	=> [
+                      # css config 1.
+                      [
+                          'css'	=>[
+                              'css/fec.css',
+                              'css/bootstrap.min.css'
+                          ],
+                      ],
+
+                      # css config 2.
+                      //[
+                      //    'options' => [
+                      //        'condition'=> 'lt IE 9',
+                      //    ],
+                      //    'css'	=>[
+                      //        'css/ltie9.css',
+                      //    ],
+                      //],
+                  ],
+
             ],
 
             'menu' => [
@@ -93,32 +95,32 @@ return [
                 /*
                  *	在菜单后面部分（产品分类菜单的前面部分）的自定义菜单
                  */
-                'behindCustomMenu' => [
-                    [
-                        'name'        => 'custom menu',            // 菜单名字
-                        'urlPath'     => '/my-custom-menu.html',    // 菜单对应的url
-                        'childMenu'   => [                        // 子菜单
-                            [
-                                'name'        => 'my custom menu 2',
-                                'urlPath'     => '/my-custom-menu-2.html',
-                            ],
-                            [
-                                'name'        => 'my custom menu 3',
-                                'urlPath'     => '/my-custom-menu-2.html',
-                                'childMenu'   => [
-                                    [
-                                        'name'        => 'my custom menu 3',
-                                        'urlPath'     => '/my-custom-menu-2.html',
-                                    ],
-                                    [
-                                        'name'        => 'my custom menu 3',
-                                        'urlPath'     => '/my-custom-menu-2.html',
-                                    ],
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
+//                'behindCustomMenu' => [
+//                    [
+//                        'name'        => 'custom menu',            // 菜单名字
+//                        'urlPath'     => '/my-custom-menu.html',    // 菜单对应的url
+//                        'childMenu'   => [                        // 子菜单
+//                            [
+//                                'name'        => 'my custom menu 2',
+//                                'urlPath'     => '/my-custom-menu-2.html',
+//                            ],
+//                            [
+//                                'name'        => 'my custom menu 3',
+//                                'urlPath'     => '/my-custom-menu-2.html',
+//                                'childMenu'   => [
+//                                    [
+//                                        'name'        => 'my custom menu 3',
+//                                        'urlPath'     => '/my-custom-menu-2.html',
+//                                    ],
+//                                    [
+//                                        'name'        => 'my custom menu 3',
+//                                        'urlPath'     => '/my-custom-menu-2.html',
+//                                    ],
+//                                ],
+//                            ],
+//                        ],
+//                    ],
+//                ],
             ],
         ],
     ],
